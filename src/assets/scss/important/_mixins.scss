@@ -1,0 +1,24 @@
+/**
+* --------------------------------
+* Theme Mixins
+* --------------------------------
+**/
+
+@mixin responsive($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+    } @else {
+        @warn "Wrong Breakpoint: #{$breakpoint}.";
+    }
+}
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}

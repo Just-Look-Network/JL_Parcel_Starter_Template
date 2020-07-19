@@ -1,0 +1,34 @@
+{
+    "name": "jl_parcel_start_template",
+    "version": "1.0.0",
+    "description": "> Starter Template with Parcel / SASS / Typescript / DistStructure.",
+    "author": "PoLLi",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html"
+    },
+    "customDistStructure": {
+        "config": {
+            ".js": "assets/js",
+            ".js.map": "assets/js",
+            ".css": "assets/css",
+            ".css.map": "assets/css",
+            "assets/img": [
+                ".jpg",
+                ".png",
+                ".svg"
+            ]
+        },
+        "options": {
+            "development": true
+        }
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-custom-dist-structure": "^1.1.14",
+        "parcel-plugin-nuke-dist": "^1.0.1",
+        "prettier": "^2.0.5",
+        "sass": "^1.26.10",
+        "typescript": "^3.9.6"
+    }
+}

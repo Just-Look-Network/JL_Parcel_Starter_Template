@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "alwaysStrict": true,
+        "baseUrl": "./src",
+        "paths": {
+            "~*": ["./*"]
+        }
+    },
+    "include": ["src/**/*"]
+}

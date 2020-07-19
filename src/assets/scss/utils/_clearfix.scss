@@ -1,0 +1,10 @@
+/**
+* --------------------------------
+* Just-Look Network - LandingPage
+* Utils: Clearfix
+* --------------------------------
+**/
+
+.clearfix {
+    @include clearfix();
+}

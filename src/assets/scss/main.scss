@@ -1,0 +1,20 @@
+/**
+* --------------------------------
+* Main Scss Entrypoint
+* --------------------------------
+**/
+
+// Import important things first
+//@import 'functions';
+@import 'variables';
+
+@import 'important/mixins';
+@import 'important/root';
+@import 'important/reset';
+
+// Import Components
+@import 'components/template';
+
+// Import Utilities
+@import 'utils/clearfix';
+@import 'utils/background';
